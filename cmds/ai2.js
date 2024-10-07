@@ -16,7 +16,7 @@ module.exports = {
             const response = await axios.get(followUpApiUrl);
             const followUpResult = response.data.reply;
             api.setMessageReaction("✅", event.messageID, () => {}, true);
-            api.sendMessage(`𝗔𝗜 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗲\n━━━━━━━━━━━━━━━━━━\n${followUpResult}\n━━━━━━━━━━━━━━━━━━`, threadID);
+            api.sendMessage(`★🅡🅔🅧🅑🅞🅣 𝗔𝗜 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗲\n━━━━━━━━━━━━━━━━━━\n${followUpResult}\n━━━━━━━━━━━━━━━━━━`, threadID);
         } catch (error) {
             console.error(error);
             api.sendMessage(error.message, threadID);
@@ -35,7 +35,7 @@ module.exports = {
         try {
             const response = await axios.get(apiUrl);
             const result = response.data.reply;
-            api.editMessage(`𝗔𝗜 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗲\n━━━━━━━━━━━━━━━━━━\n${result}\n━━━━━━━━━━━━━━━━━━`, haha.messageID, threadID, event.messageID);
+            api.editMessage(`★🅡🅔🅧🅑🅞🅣 𝗔𝗜 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗲\n━━━━━━━━━━━━━━━━━━\n${result}\n━━━━━━━━━━━━━━━━━━`, haha.messageID, threadID, event.messageID);
 
             global.client.onReply.push({
                 name: this.name,
