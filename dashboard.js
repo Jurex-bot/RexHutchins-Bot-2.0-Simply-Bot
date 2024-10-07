@@ -23,7 +23,7 @@ const password = adminConfig.loginpanel.password;
 const restartPasscode = adminConfig.loginpanel.passcode;
 
 app.use(session({
-    secret: 'your-secret-key',
+    secret: '18',
     resave: false,
     saveUninitialized: true,
     cookie: { secure: false } 
