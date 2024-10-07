@@ -19,7 +19,7 @@ api.setMessageReaction("⏱️", event.messageID, () => {}, true);        try {
             const { response: followUpResult } = response.data;
  
            api.setMessageReaction("✅", event.messageID, () => {}, true);
-    api.sendMessage(`𝗖𝗛𝗔𝗧𝗚𝗣𝗧\n━━━━━━━━━━━━━━━━━━\n ${followUpResult}\n━━━━━━━━━━━━━━━━━━`, threadID, event.messageID);
+    api.sendMessage(`★🅡🅔🅧🅑🅞🅣𝗖𝗛𝗔𝗧𝗚𝗣𝗧\n━━━━━━━━━━━━━━━━━━\n ${followUpResult}\n━━━━━━━━━━━━━━━━━━`, threadID, event.messageID);
         } catch (error) {
             console.error(error);
             api.sendMessage(error.message, threadID);
@@ -58,7 +58,7 @@ api.setMessageReaction("⏱️", event.messageID, () => {}, true);        try {
             const response = await axios.get(apiUrl);
             const { response: result } = response.data;
 
-            const responseMessage = `𝗖𝗛𝗔𝗧𝗚𝗣𝗧\n━━━━━━━━━━━━━━━━━━\n${result}\n━━━━━━━━━━━━━━━━━━`;
+            const responseMessage = `★🅡🅔🅧🅑🅞🅣𝗖𝗛𝗔𝗧𝗚𝗣𝗧\n━━━━━━━━━━━━━━━━━━\n${result}\n━━━━━━━━━━━━━━━━━━`;
             api.editMessage(responseMessage, lad.messageID, event.threadID, messageID);
 
             global.client.onReply.push({
