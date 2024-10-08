@@ -17,8 +17,8 @@
   "restart": true,
   "restartTime": 50,
   "loginpanel": {
-    "user": "your username on dashboard",
+    "user": "Jurex-bot",
     "password": "your password",
-    "passcode": "passcode but is not working for now"
+    "passcode": "18"
   }
 }
