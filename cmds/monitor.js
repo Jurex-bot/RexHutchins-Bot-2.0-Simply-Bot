@@ -5,7 +5,7 @@ module.exports = {
     usedby: 0,
     info: "Monitor website uptime, search for monitored URLs, and list all monitored URLs",
     onPrefix: true,
-    dev: "Marjhun Baylon",
+    dev: "Jurex Aso",
     cooldowns: 6,
     nickName: ["moni"],
 
